@@ -1,0 +1,5 @@
+
+Modelo CRUD
+
+É um sistema que possui login para acesso, com os itens de inserção, exclusão, alteração e consulta no banco de dados, o SQL do banco esta junto com os arquivos na pasta SQL e com menu com submenu em cascata. * 01.07.2015
+O upload de imagens e visualização * 21.06.2017

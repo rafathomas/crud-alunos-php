@@ -1,0 +1,230 @@
+@charset="utf-8";
+
+/* GERAL------------------------------------- */
+*{
+	margin: 0 auto;
+	padding: 0;
+	color: #333;
+	text-decoration: none;
+}
+
+table, tr, td {
+	border: 1px;
+	border-top: 1px;
+	border-style: solid;
+	border-bottom-style: solid;
+	border-right-style: none;
+	border-left-style: none;
+	border-top-style: none;
+	border-color: #ccc;
+	border-collapse: collapse;
+	padding: 3px;
+	text-align: left;
+}
+
+body{
+    background-image: url("./../img/cinza6.jpg");
+    background-color: #ccc;
+    margin: 0 0 60px; /* altura do seu rodape */
+}
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+
+/* CABECALHO -------------------------------- */
+.cabecalho{
+	background-color: #23AFAF;
+	min-height: 62px;
+	margin: 20px 0 10px 0px;
+}
+
+/* MENU ------------------------------------- */
+.menu{
+	padding-top: 23px;
+	width: 900px;
+}
+
+.menu ul{
+	text-align: right;
+	padding-right: 30px;
+}
+.menu li{	
+	display: inline;
+	padding: 35px 20px 30px 20px;
+}
+
+.menu li:hover{
+	background-color: #1e9191;
+	color:#fff;
+}
+
+/* GERAL---------------------------------- */
+.clear{
+	clear: both;
+}
+/* CONTEUDO---------------------------------- */
+.conteudo{
+	padding: 0 0 10px 0;
+	background-color: #eee;
+	width: 900px;
+	min-height: 200px;
+	-webkit-box-shadow: 6px 6px 10px -2px rgba(0,0,0,0.13);
+	-moz-box-shadow: 6px 6px 10px -2px rgba(0,0,0,0.13);
+	box-shadow: 6px 6px 10px -2px rgba(0,0,0,0.13);
+	overflow:hidden;
+}
+
+.conteudo label{
+	margin-top: 15px;
+	display: block;
+}
+
+.conteudo input[type=text], input[type=password]{
+	margin-top: 3px;
+	padding: 10px;
+	display: block;
+	width: 400px;
+}
+
+.conteudo input[type=submit], input[type=reset]{
+	margin-top: 23px;
+	padding: 10px 60px 10px 60px;	
+	margin: 20px 20px 0px 0px;
+}
+
+.conteudo form{
+	width: 450px;
+	margin: 0 auto;
+}
+
+.tabelaRelatorio{
+	width: 890px;
+}
+
+.tabelaRelatorio td{
+	height: 30px;
+}
+
+.tabelaRelatorio tr:hover{
+	background-color: #ddd;
+}
+
+.tabelaRelatorio th{
+	background-color: #aaa;
+	color: #fff;
+	height: 55px;
+	padding-left: 3px;
+	border-color: #000;
+}
+
+.excluir{
+	background-color: #F00;
+	padding: 17px;
+	color: #FFF;
+}
+
+.alterar{
+	background-color: #00F;
+	padding: 17px;
+	color: #FFF;
+}
+
+.relatorio{
+	background-color: #888;
+	padding: 17px;
+	color: #FFF;
+}
+
+.cadastrar{
+	background-color: #FCD209;
+	padding: 17px;
+	color: #FFF;
+}
+
+.home{
+	background-color: #6FA834;
+	padding: 17px;
+	color: #FFF;
+}
+
+.erro{
+	background-color: #F00;
+	padding: 17px;
+	color: #FFF;
+}
+
+
+/* RODAPE------------------------------------ */
+.rodape{
+	margin-top: 15px;
+	background-color: #ddd;
+	min-height: 32px;
+	padding: 20px 0 20px 0px;
+	text-align: center;  	
+	bottom:0;
+	width:100%;
+
+    /*fixa o rodapé no final da página */
+    position: absolute; 
+    height: 35px; 
+}
+
+.botao{
+	border: 1px;
+	border-style: solid;
+	border-color: #999;
+	margin: 5px;
+	padding: 5px;
+	background-color: #eee;
+	color:#555;
+	border-radius: 3px;
+}
+
+.botao:hover{
+	border: 1px;
+	border-style: solid;
+	border-color: #999;
+	margin: 5px;
+	padding: 5px;
+	background-color: #888;
+	color:#fff;
+	border-radius: 3px;
+}
+
+
+.botaoAtual{
+	border: 1px;
+	border-style: solid;
+	border-color: #999;
+	margin: 5px;
+	padding: 5px;
+	background-color: #aaa;
+	color:#555;
+	border-radius: 3px;
+}
+
+.botaoNova{
+	border: 1px;
+	border-style: solid;
+	border-color: #999;
+	margin-top: 28px;
+	padding: 10px 30px 10px 30px;
+	background-color: #eee;
+	color:red;
+	border-radius: 3px;
+}
+
+.botaoNova:hover{
+	border: 4px;
+	background-color: #ccc;
+	border-radius: 3px;
+}
+
+.limpaRodape{
+	background-color: #f00;
+	margin-bottom: 100px;
+}

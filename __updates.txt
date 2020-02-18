@@ -1,0 +1,25 @@
+----------------------
+Atualizações
+21.06.2017  - Upload de imagens com filtro por extensão
+		    - Visualização das imagens da pasta
+		    
+18.09.2016  - Cadastro de usuários com vário inputs por linha;
+
+17.09.2016  - Menu com submenu em cascata;
+
+31.05.2016  - Consulta com sistema de paginação relCliente.php;
+
+09.07.2015  - rodapé fixo no final da página acompanhando o conteúdo da página;
+
+02.07.2015 	- Atualização do rodapé das páginas por inserção de arquivo;
+			- Verifica validade do email;
+			- verifica tamanho do nome do usuário e senha mínimos;
+
+01.07.2015 	- Sistema de pesquisa no relCliente.php - ok;
+		   	- Sistema de login - ok;
+		   	- on-line em ronniealunos.16mb.com/crud;
+
+18.06.2015 	- tela de inserir - ok
+
+
+

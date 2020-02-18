@@ -1,0 +1,311 @@
+@charset="utf-8";
+
+/* GERAL------------------------------------- */
+*{
+	margin: 0 auto;
+	padding: 0;
+	color: #333;
+	text-decoration: none;
+}
+
+table, tr, td {
+	border: 1px;
+	border-top: 1px;
+	border-style: solid;
+	border-bottom-style: solid;
+	border-right-style: none;
+	border-left-style: none;
+	border-top-style: none;
+	border-color: #ccc;
+	border-collapse: collapse;
+	padding: 3px;
+	text-align: left;
+}
+
+tr:hover{
+	background-color: #ddd;
+}
+
+body{
+    background-image: url("./../img/cinza6.jpg");
+    background-color: #ccc;
+    margin: 0 0 60px; /* altura do seu rodape */
+}
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.logo{
+	min-height: 65px;
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 20px;
+	text-align: right;
+}
+
+/* CABECALHO -------------------------------- */
+.cabecalho{
+	background-color: #48CAB0;
+	min-height: 65px;
+	margin: 20px 0 10px 0px;		
+}
+
+/* MENU ------------------------------------- */
+
+/*Configurações Padrões*/
+ul.menu, .menu li, .menu a{ margin:0; padding:0; list-style:none; text-decoration:none;}
+ul.menu ul{ position:absolute; display:none; box-shadow:3px 3px 5px #777;}
+
+/* Configurações nivel 1*/
+ul.menu{ float:left; font-family:Verdana, Geneva, sans-serif; font-size:15px; border-radius:5px; padding:0 5px;}
+.menu li{ float:left; width:auto; position:relative;}
+.menu li a{ display:block; padding:0 20px; line-height:65px; height:65px; float:left; transition:all 0.5s linear; }
+
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-1{ display:block; top:65px; left:0; padding:5px; width:200px; border-radius:0 0 5px 5px;   }
+.menu ul.submenu-1 a{  width:160px; padding:0 20px; border-radius:5px;  }
+
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-2{ display:block; top:0; left:195px; padding:5px; width:200px;  border-radius: 0 5px 5px 5px; }
+.menu ul.submenu-2 a{  width:160px; padding:0 20px; border-radius:5px; }
+
+/* Configurações nivel 3*/
+.menu li:hover > ul.submenu-3{ display:block; top:0; left:195px; padding:5px; width:200px;  border-radius: 0 5px 5px 5px; }
+.menu ul.submenu-3 a{  width:160px; padding:0 20px; border-radius:5px; }
+
+/*Configurações de cores*/
+
+/*nivel 1*/
+.menu{width: 1000px; text-align: right;}
+.menu a{ background:#48CAB0; color:#000;}
+.menu li:hover > a{ background:#666;  color:#fff;} /*Configuração do menu hover*/
+
+/*nivel 2*/
+.submenu-1{ background:#48CAB0;}
+.submenu-1 a{color:#fff;}
+.submenu-1 li:hover > a{ background:#666; } /*Configuração do menu hover*/
+
+/*nivel 3*/
+.submenu-2{ background:#48CAB0;}
+.submenu-2 a{color:#fff;}
+.submenu-2 li:hover > a{ background:#333; } /*Configuração do menu hover*/
+
+/*nivel 3*/
+.submenu-3{ background:#48CAB0;}
+.submenu-3 a{color:#fff;}
+.submenu-3 li:hover > a{ background:#000; } /*Configuração do menu hover*/
+
+/* GERAL---------------------------------- */
+.clear{
+	clear: both;
+}
+
+/* CONTEUDO---------------------------------- */
+.conteudo{
+	padding: 0 0 10px 0;
+	background-color: #eee;
+	width: 1000px;
+	min-height: 200px;
+	-webkit-box-shadow: 6px 6px 10px -2px rgba(0,0,0,0.13);
+	-moz-box-shadow: 6px 6px 10px -2px rgba(0,0,0,0.13);
+	box-shadow: 6px 6px 10px -2px rgba(0,0,0,0.13);
+	overflow:hidden;
+}
+
+.conteudo label{
+	margin-top: 15px;
+	/*idisplay: block; */
+}
+
+.conteudo input[type=text], input[type=password], input[type=email], input[type=button]{
+	margin-top: 3px;
+	padding: 10px;
+	/*idisplay: block; */
+	width: 388px;
+}
+
+
+.conteudo select{
+	margin-top: 3px;
+	padding: 10px;
+	/*display: block;*/
+	width: 425px;
+}
+
+.conteudo input[type=submit], input[type=reset]{
+	margin-top: 23px;
+	padding: 10px 60px 10px 60px;	
+	margin: 20px 20px 0px 0px;
+}
+
+.conteudo form{
+	width: 980px;
+	margin: 0 auto;
+}
+
+.conteudo .ind form{
+	width: 990px;
+	margin: 0 auto;
+}
+
+.linha{
+	width: 1000px;
+	margin-bottom: 10px;	
+	
+}
+
+label{
+	display: inline-block;
+    width: 71px;
+}
+
+.tabelaRelatorio{
+	width: 890px;
+}
+
+.tabelaRelatorio td{
+	height: 30px;
+}
+
+.tabelaRelatorio tr:hover{
+	background-color: #ddd;
+}
+
+.tabelaRelatorio th{
+	background-color: #aaa;
+	color: #fff;
+	height: 55px;
+	padding-left: 3px;
+	border-color: #000;
+}
+
+.excluir{
+	background-color: #F00;
+	padding: 17px;
+	color: #FFF;
+}
+
+.alterar{
+	background-color: #00F;
+	padding: 17px;
+	color: #FFF;
+}
+
+.relatorio{
+	background-color: #888;
+	padding: 17px;
+	color: #FFF;
+}
+
+.cadastrar{
+	background-color: #999;
+	padding: 17px;
+	color: #FFF;
+}
+
+.home{
+	background-color: #999;
+	padding: 17px;
+	color: #FFF;
+}
+
+.erro{
+	background-color: #F00;
+	padding: 17px;
+	color: #FFF;
+}
+
+
+/* RODAPE------------------------------------ */
+.rodape{
+	margin-top: 15px;
+	background-color: #ddd;
+	min-height: 32px;
+	padding: 20px 0 20px 0px;
+	text-align: center;  	
+	bottom:0;
+	width:100%;
+
+    /*fixa o rodapé no final da página */
+    position: absolute; 
+    height: 35px; 
+}
+
+.botao{
+	border: 1px;
+	border-style: solid;
+	border-color: #999;
+	margin: 5px;
+	padding: 5px;
+	background-color: #eee;
+	color:#555;
+	border-radius: 3px;
+}
+
+.botao:hover{
+	border: 1px;
+	border-style: solid;
+	border-color: #999;
+	margin: 5px;
+	padding: 5px;
+	background-color: #888;
+	color:#fff;
+	border-radius: 3px;
+}
+
+
+.botaoAtual{
+	border: 1px;
+	border-style: solid;
+	border-color: #999;
+	margin: 5px;
+	padding: 5px;
+	background-color: #aaa;
+	color:#555;
+	border-radius: 3px;
+}
+
+.botaoNova{
+	border: 1px;
+	border-style: solid;
+	border-color: #999;
+	margin-top: 28px;
+	padding: 10px 30px 10px 30px;
+	background-color: #eee;
+	color:red;
+	border-radius: 3px;
+}
+
+.botaoNova:hover{
+	border: 4px;
+	background-color: #ccc;
+	border-radius: 3px;
+}
+
+.limpaRodape{
+	background-color: #f00;
+	margin-bottom: 100px;
+}
+
+#relImagens ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+}
+
+#relImagens ul li { display: inline; }
+
+#relImagens ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+}
